@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Meu portfólio</title>
+    </head>
+   
+<body>
+    <h1 class="pt-serif-bold"></h1>
+<p class="pt-serif-regular"></p>
+<p class="pt-serif-regular-italic"></p>
+<p class="pt-serif-bold-italic"></p>
+
+
+    <header class="container text-center py-5">
+        <div class="row align-items-center">
+            <!-- Imagens de cada lado -->
+            <div class="col-4">
+                <img src="img/fer.png" alt="Foto da Fernanda" class="rounded-circle w-75">
+            </div>
+            <div class="col-4">
+                <img src="img/programacao.png" alt="Ícone de programação" class="img-fluid">
+            </div>
+            <div class="col-4">
+                <img src="img/codigo.png" alt="Código" class="img-fluid">
+            </div>
+        </div>
+
+        <h1>Desenvolvendo habilidades em tecnologia no ensino médio</h1>
+        <h4 class="lead">Somos duas alunas do ensino médio procurando etender mais sobre: tecnologia e programação. Juntas, 
+            desenvolvemos este projeto com o apoio e orientação da nossa tutora/professora Ana. Durante o desenvolvimento, tivemos a 
+            oportunidade de aprender mais sobre HTML, CSS e JavaScript, e decidimos aplicar esses conhecimentos para criar algo que
+            refletisse nosso aprendizado e nosso interesse em compartilhar com os outros.</h4>
+
+        <div class="my-3">
+            <p>Nossas habilidades:</p>
+            <span class="badge bg-secondary">HTML</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-secondary">JavaScript</span>
+            <span class="badge bg-secondary">Scratch</span>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Card de Projetos 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="img/projeto1.jpg" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Empresa de camisetas</h5>
+                        <p class="card-text">Camisetas personalizadas para devoção católica. Escolha seu santo, cores e mais.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card de Projetos 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="img/projeto2.jpg" class="card-img-top" alt="Imagem do projeto de combo com comidas">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo com comidas e séries</h5>
+                        <p class="card-text">Uma experiência temática unindo séries e comida, tudo dentro do universo católico.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segunda linha de cards -->
+        <div class="row">
+            <!-- Card de Projetos 3 -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="img/projeto3.jpg" class="card-img-top" alt="Imagem do projeto da livraria online">
+                    <div class="card-body">
+                        <h5 class="card-title">Livraria online</h5>
+                        <p class="card-text">Livros católicos para todos os públicos, focado em fé, educação e espiritualidade.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card de Projetos 4 -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="img/projeto4.jpg" class="card-img-top" alt="Imagem do projeto de perguntas e respostas">
+                    <div class="card-body">
+                        <h5 class="card-title">Cartão de perguntas e respostas</h5>
+                        <p class="card-text">Cartões digitais com perguntas e respostas sobre a doutrina católica, ajudando no aprendizado.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal4">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="my-5">
+            <h2>Minha Biblioteca Online</h2>
+            <p>Utilizamos HTML e CSS para criar páginas web eficientes e acessíveis. HTML é a estrutura, enquanto o CSS deixa tudo mais bonito e organizado, criando uma experiência visual agradável para o usuário. Além disso, sites como o Alura são essenciais para nos ajudar a aprimorar as habilidades necessárias para criar páginas responsivas e interativas.</p>
+        </section>
+    </main>
+
+    <!-- Rodapé Personalizado -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <h2>Entre em contato</h2>
+            <p class="mb-3">Fique à vontade para nos enviar um email ou dar uma olhada nos outros projetos:</p>
+            
+            <div>
+                <a href="https://github.com/femascheti" class="text-white me-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png" alt="GitHub" style="width: 30px; height: 30px; margin-right: 10px;">
+                    GitHub
+                </a>
+                <a href="mailto:fernanda@email.com" class="text-white me-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Email_icon.svg/512px-Email_icon.svg.png" alt="Gmail" style="width: 30px; height: 30px; margin-right: 10px;">
+                </a>
+            </div>
+            
+            <p class="mt-4">© Copyright 2024. Produzido por vk</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

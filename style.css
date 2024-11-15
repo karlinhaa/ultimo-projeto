@@ -1,30 +1,215 @@
-@import url(....);
-
-:root {   
-    --cor-principal: #2a3d53;
-    --cor-secundaria: #282828;
-    --cor-destaque: #C92BFC;
+/* Definindo as variáveis para facilitar o ajuste das cores e estilos */
+:root {
+    --cor-principal: #bb0092;  /* Cor principal (texto e fundo) */
+    --cor-secundaria: #39005a; /* Cor secundária (títulos) */
+    --cor-destaque: #C92BFC;   /* Cor de destaque (botões e links) */
+    --cor-fundo-claro: #e1b0eb; /* Fundo claro para áreas internas */
+    --cor-borda: rgba(255, 153, 0, 0.527); /* Cor suave para bordas */
+    --cor-fundo-card: #75078b; /* Cor de fundo dos cards */
+    --cor-fundo-rodape: #ff0000; /* Cor do rodapé */
+    --cor-texto-rodape: #f80707; /* Cor do texto do rodapé */
+    --font-family: "Chakra Petch", sans-serif;
+    --font-size: 16px;
+    --font-size-title: 2rem;
+    --font-size-subtitle: 1.5rem;
+    --transition-duration: 0.3s;
 }
 
+/* Estilização geral do body */
 body {
-    font-family: "Chakra Petch", sans-serif;
+    font-family: "PT Serif", serif;
+    font-size: 20px;
+    background-color: var(--cor-fundo-claro);
     color: var(--cor-principal);
+    margin: 0;
+    padding: 0 18px;
+    /* Definições das fontes PT Serif */
+.pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .pt-serif-bold {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .pt-serif-regular-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .pt-serif-bold-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 1000;
+    font-style: italic;
+  }
+  h1 {
+    font-size: 45px; /* Tamanho de fonte maior para h1 */
 }
 
+h2 {
+    font-size: 45px; /* Tamanho de fonte para h2 */
+}
+
+p {
+    font-size: 24px; /* Tamanho de fonte para parágrafos */
+}
+}
+
+/* Títulos */
 h1, h2, h5 {
     color: var(--cor-secundaria);
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+/* Definindo uma fonte mais acessível para o parágrafo */
+p, .lead {
+    font-size: var(--font-size);
+    line-height: 1.6;
+    color: #000000;
+}
+
+/* Seção de introdução (header) */
+header {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: var(--cor-fundo-claro);
+}
+
+header img {
+    border-radius: 50%;
+    margin: 1rem 0;
+}
+
+/* Cards */
+.card {
+    border-radius: 8px;
+    background-color: var(--cor-fundo-card);
+    box-shadow: 0 4px 10px rgba(255, 0, 34, 0.644);
+    margin-bottom: 2rem;
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(255, 0, 34, 0.644);
+}
+
+.card img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.card-title {
+    font-size: var(--font-size-subtitle);
+    color: var(--cor-secundaria);
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.btn-link {
+    color: var(--cor-destaque);
+    font-weight: 700;
+    transition: color var(--transition-duration);
+}
+
+.btn-link:hover {
+    color: #fa63c0;
+    background-color: var(--cor-destaque);
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Botões */
+.btn {
+    background-color: var(--cor-destaque);
+    color: rgb(231, 209, 222);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: background-color var(--transition-duration), transform var(--transition-duration);
+}
+
+.btn:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-fundo-rodape);
+    color: var(--cor-texto-rodape);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: var(--cor-texto-rodape);
+    text-decoration: none;
     font-weight: 700;
 }
 
- .lead, .btn-link {
+footer a:hover {
     color: var(--cor-destaque);
-    font-weight: 700;
- }
- 
- a, .btn-link:hover {
-    color: var(--cor-destaque);
- }
+    text-decoration: underline;
+}
 
- a:hover{
-    color: var(--cor-destaque);
- }
+/* Estilos para as imagens do rodapé */
+footer i {
+    font-size: 10rem;
+    margin: 0 5rem;
+    transition: transform var(--transition-duration);
+}
+
+footer i:hover {
+    transform: scale(1.2);
+}
+
+/* Melhorando a visualização das badges de habilidades */
+.badge {
+    background-color: var(--cor-destaque);
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.badge:hover {
+    background-color: #faa3d6;
+}
+
+/* Layout responsivo */
+@media (max-width: 768px) {
+    header .row {
+        text-align: center;
+    }
+    
+    header img {
+        width: 80%;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    footer {
+        padding: 1.5rem 0;
+    }
+}
