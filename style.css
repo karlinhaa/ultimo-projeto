@@ -6,8 +6,8 @@
     --cor-fundo-claro: #e1b0eb; /* Fundo claro para áreas internas */
     --cor-borda: rgba(255, 153, 0, 0.527); /* Cor suave para bordas */
     --cor-fundo-card: #75078b; /* Cor de fundo dos cards */
-    --cor-fundo-rodape: #ff0000; /* Cor do rodapé */
-    --cor-texto-rodape: #f80707; /* Cor do texto do rodapé */
+    --cor-fundo-rodape: #1900ff; /* Cor do rodapé */
+    --cor-texto-rodape: #071ff8; /* Cor do texto do rodapé */
     --font-family: "Chakra Petch", sans-serif;
     --font-size: 16px;
     --font-size-title: 2rem;
@@ -24,7 +24,9 @@ body {
     margin: 0;
     padding: 0 18px;
     /* Definições das fontes PT Serif */
-.pt-serif-regular {
+}
+
+    .pt-serif-regular {
     font-family: "PT Serif", serif;
     font-weight: 700;
     font-style: normal;
@@ -58,7 +60,7 @@ h2 {
 p {
     font-size: 24px; /* Tamanho de fonte para parágrafos */
 }
-}
+
 
 /* Títulos */
 h1, h2, h5 {
@@ -90,14 +92,14 @@ header img {
 .card {
     border-radius: 8px;
     background-color: var(--cor-fundo-card);
-    box-shadow: 0 4px 10px rgba(255, 0, 34, 0.644);
+    box-shadow: 0 4px 10px rgba(211, 19, 44, 0.644);
     margin-bottom: 2rem;
     transition: transform var(--transition-duration), box-shadow var(--transition-duration);
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(255, 0, 34, 0.644);
+    box-shadow: 0 6px 20px rgba(211, 19, 44, 0.644);
 }
 
 .card img {
@@ -146,7 +148,7 @@ header img {
 }
 
 .btn:hover {
-    background-color: #ff0000;
+    background-color: #0400ff;
     transform: scale(1.05);
 }
 
@@ -202,7 +204,7 @@ footer i:hover {
     }
     
     header img {
-        width: 80%;
+        width: 30%;
     }
 
     .card {
@@ -212,4 +214,9 @@ footer i:hover {
     footer {
         padding: 1.5rem 0;
     }
+}
+
+
+.imagem {
+    width: 60px;;
 }
